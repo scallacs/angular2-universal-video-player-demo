@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+
+<div>
+  <sample-component></sample-component>
+</div>
+
+<div id="player-container">
+    <universal-player [controller]="playerController"></universal-player>
+    <youtube-player [event]="playerEvent" [cmd]="playerCmd"></youtube-player>
+    <fstricks-player-menu [ctrl]="playerCmd"></fstricks-player-menu>
+</div>
